@@ -88,6 +88,10 @@ if interpreted_language and run == 1:
         from langs.zsh_run import zsh_run
         zsh_run(program_name)
 
+    if program_extension == "pl":
+        from langs.perl_run import perl_run
+        perl_run(program_name)
+
 
 #for compiled_language language
 # build compiled language
