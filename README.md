@@ -71,6 +71,8 @@ change number ```10split``` to increase/decrease the terminal size
 ```
 python
 c/c++
+perl
+go
 v
 bash
 zsh
