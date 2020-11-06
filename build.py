@@ -100,5 +100,9 @@ if compiled_language:
     if program_extension == "v":
         from langs.v_run import v_run
         v_run(program_name_safe, [build, run, build_run], output_location)
+
+    if program_extension == "go":
+        from langs.go_run import go_run
+        go_run(program_name_safe, [build, run, build_run], output_location)
 # ----------------------------------------------------------------------------
 # ----------------------------------------------------------------------------
