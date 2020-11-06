@@ -66,3 +66,15 @@ change number ```10split``` to increase/decrease the terminal size
 ![running python file using lazy-builder script](https://i.imgur.com/YLyRfcM.png)
 
 
+
+# currently supported languages
+```
+python
+c/c++
+v
+bash
+zsh
+[ more comming soon...]
+```
+# to-do
+add more supporting language
