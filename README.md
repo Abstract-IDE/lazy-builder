@@ -59,14 +59,14 @@ or if you want the compiled file to stay in it's parent directory(from where it'
 
 # currently supported languages
 ```
-## [ Compiled Languages ]
+[ Compiled Languages ]
 c/c++
 go
 qbasic
 rust
 v
 
-## [ Interpreted Languages ]
+[ Interpreted Languages ]
 bash
 javascript
 perl
