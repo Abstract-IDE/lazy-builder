@@ -1,7 +1,7 @@
 import subprocess
 
 
-def c_family_exec():
+def qbasic_exec():
     cmd = f"{file_name_no_extc_with_loc}"
     if output_location != "None":
         cmd = f"{output_location}{file_name_no_extc}"
@@ -16,10 +16,10 @@ def c_family_exec():
         print(f"compiled file, {file_name_no_extc_with_loc}, \033[91mnot found")
 
 
-def c_family_build():
-    cmd = f"gcc -Wall -ggdb {file_name_with_location} -o {file_name_no_extc} -lstdc++ -lm -msse3 -fdiagnostics-generate-patch"
+def qbasic_build():
+    cmd = f"/home/lazy/codeDNA/confiFILES/programmingLANGUAGE/qb64/qb64 -x {file_name_with_location} -o {file_name_no_extc}"
     if output_location != "None":
-        cmd = f"gcc -Wall -ggdb {file_name_with_location} -o {output_location}{file_name_no_extc} -lstdc++ -lm -msse3 -fdiagnostics-generate-patch"
+        cmd = f"/home/lazy/codeDNA/confiFILES/programmingLANGUAGE/qb64/qb64 -x {file_name_with_location} -o {output_location}{file_name_no_extc}"
     cmd = "".join(cmd).split()
 
     status = subprocess.run(cmd)
@@ -35,12 +35,12 @@ def c_family_build():
         exit(1)
 
 
-def c_family_buildexec():
-    c_family_build()
-    c_family_exec()
+def qbasic_buildexec():
+    qbasic_build()
+    qbasic_exec()
 
 
-def c_family_run(program_name, conditions, output_loc="None"):
+def qbasic_run(program_name, conditions, output_loc="None"):
     build, run, build_run = conditions
     global file_name, file_name_no_extc, output_location, file_name_with_location, file_name_no_extc_with_loc
     file_name = program_name.split("/")[-1]
@@ -50,11 +50,11 @@ def c_family_run(program_name, conditions, output_loc="None"):
     output_location = str(output_loc)
 
     if run == 1 and build == 0:
-        c_family_exec()
+        qbasic_exec()
     if run == 1 and build == 1:
-        c_family_buildexec()
+        qbasic_buildexec()
     if build == 1 and run == 0:
-        c_family_build()
+        qbasic_build()
     if build_run == 1:
-        c_family_buildexec()
+        qbasic_buildexec()
 

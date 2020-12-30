@@ -1,5 +1,4 @@
 import subprocess
-subprocess.run(["clear"])
 
 
 def go_exec():
@@ -9,9 +8,7 @@ def go_exec():
     cmd = "".join(cmd).split()
 
     try:
-        print("__________________________________________")
-        print("\tRUNNING PROGRAM")
-        print("__________________________________________")
+        print("████████████████ RUNNING PROGRAM ████████████████")
         subprocess.run(cmd)
         print("\n\n")
     except FileNotFoundError:
