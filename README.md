@@ -25,6 +25,8 @@ optional arguments:
 
 ## Using with vim/neo-vim
 you can use lazy-build with vim by mapping as shown in below example:
+
+#### NOTE: first install  [vim-floaterm](https://github.com/voldikss/vim-floaterm) plugin 
 ```
 " Run program file when leader+r is pressed
 nnoremap <Leader>r :w <CR><bar> :FloatermNew
