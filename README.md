@@ -59,16 +59,19 @@ or if you want the compiled file to stay in it's parent directory(from where it'
 
 # currently supported languages
 ```
-bash
+## [ Compiled Languages ]
 c/c++
 go
+qbasic
+rust
+v
+
+## [ Interpreted Languages ]
+bash
 javascript
 perl
 python
-qbasic
-rust
 sql
-v
 zsh
 
 [ more comming soon...]
