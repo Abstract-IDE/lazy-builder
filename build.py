@@ -92,6 +92,20 @@ if interpreted_language and run == 1:
         from langs.perl_run import perl_run
         perl_run(program_name)
 
+    if program_extension == "js":
+        from langs.javascript_run import javascript_run
+        javascript_run(program_name)
+
+    if program_extension == "sql":
+         db_conf_file = str(Path.home())+"/.my.cnf"
+         if Path(db_conf_file).is_file():
+             from langs.sql_run import sql_run
+             sql_run(program_name)
+             print(program_name)
+         else:
+             print("please configure ~/.sql_conf file \n")
+             import sys; sys.exit()
+
 
 #for compiled_language language
 # build compiled language
@@ -108,5 +122,9 @@ if compiled_language:
     if program_extension == "go":
         from langs.go_run import go_run
         go_run(program_name_safe, [build, run, build_run], output_location)
+
+    if program_extension == "bas":
+        from langs.qbasic_run import qbasic_run
+        qbasic_run(program_name_safe, [build, run, build_run], output_location)
 # ----------------------------------------------------------------------------
 # ----------------------------------------------------------------------------
