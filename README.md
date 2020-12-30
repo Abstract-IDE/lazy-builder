@@ -26,7 +26,10 @@ optional arguments:
 ## Using with vim/neo-vim
 you can use lazy-build with vim by mapping as shown in below example:
 
-#### NOTE: first install  [vim-floaterm](https://github.com/voldikss/vim-floaterm) plugin 
+[ NOTE: first install  [vim-floaterm](https://github.com/voldikss/vim-floaterm) plugin
+                    OR
+if you don't want to install vim-floaterm plugin, go with [this](https://github.com/shaeinst/lazy-builder/tree/main) branch and follow [this](https://github.com/shaeinst/lazy-builder/tree/main#using-with-vimneo-vim) example of mapping (which use builtin split option)
+] 
 ```
 " Run program file when leader+r is pressed
 nnoremap <Leader>r :w <CR><bar> :FloatermNew
