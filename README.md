@@ -53,6 +53,25 @@ replace this location to your desired location where you want to put the output/
 or if you want the compiled file to stay in it's parent directory(from where it's compiled) then remove "-o /home/user/.cache/build_files/" from binding
 
 
+
+# currently supported languages
+```
+bash
+c/c++
+go
+javascript
+perl
+python
+qbasic
+sql
+v
+zsh
+
+[ more comming soon...]
+```
+# to-do
+add more language support
+
 ## Screenshots
 ### running python program
 ![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/LazyBuild-floaterm/Screenshots/2020-12-30_19-46.png)
@@ -72,21 +91,3 @@ or if you want the compiled file to stay in it's parent directory(from where it'
 
 
 
-
-# currently supported languages
-```
-bash
-c/c++
-go
-javascript
-perl
-python
-qbasic
-sql
-v
-zsh
-
-[ more comming soon...]
-```
-# to-do
-add more language support
