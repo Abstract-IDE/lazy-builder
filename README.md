@@ -69,13 +69,17 @@ change number ```10split``` to increase/decrease the terminal size
 
 # currently supported languages
 ```
-python
-c/c++
-perl
-go
-v
 bash
+c/c++
+go
+javascript
+perl
+python
+qbasic
+sql
+v
 zsh
+
 [ more comming soon...]
 ```
 # to-do
