@@ -52,19 +52,6 @@ or if you want the compiled file to stay in it's parent directory(from where it'
 
 change number ```10split``` to increase/decrease the terminal size
 
-## Screenshots
-### running python file
-![running python file using lazy-builder script](https://i.imgur.com/gMNmBDQ.png)
-
-### compiling c file
-![running python file using lazy-builder script](https://i.imgur.com/JpzOiQi.png)
-
-### running c file
-![running python file using lazy-builder script](https://i.imgur.com/0ro8hxE.png)
-
-### compiling and then running c file
-![running python file using lazy-builder script](https://i.imgur.com/YLyRfcM.png)
-
 
 
 # currently supported languages
@@ -84,3 +71,18 @@ zsh
 ```
 # to-do
 add more supporting language
+
+
+## Screenshots
+### running python file
+![running python file using lazy-builder script](https://i.imgur.com/gMNmBDQ.png)
+
+### compiling c file
+![running python file using lazy-builder script](https://i.imgur.com/JpzOiQi.png)
+
+### running c file
+![running python file using lazy-builder script](https://i.imgur.com/0ro8hxE.png)
+
+### compiling and then running c file
+![running python file using lazy-builder script](https://i.imgur.com/YLyRfcM.png)
+
