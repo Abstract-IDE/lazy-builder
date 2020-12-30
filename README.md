@@ -55,19 +55,19 @@ or if you want the compiled file to stay in it's parent directory(from where it'
 
 ## Screenshots
 ### running python program
-![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/v2.0/Screenshots/2020-12-30_19-46.png)
+![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/LazyBuild-floaterm/Screenshots/2020-12-30_19-46.png)
 
 ### compiling c++ program
-![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/v2.0/Screenshots/2020-12-30_19-46_1.png)
+![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/LazyBuild-floaterm/Screenshots/2020-12-30_19-46_1.png)
 
 ### running c++ program
-![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/v2.0/Screenshots/2020-12-30_19-47.png)
+![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/LazyBuild-floaterm/Screenshots/2020-12-30_19-47.png)
 
 ### compiling and then running c++ program
-![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/v2.0/Screenshots/2020-12-30_19-47_1.png)
+![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/LazyBuild-floaterm/Screenshots/2020-12-30_19-47_1.png)
 
 ### running bash program
-![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/v2.0/Screenshots/2020-12-30_19-49.png)
+![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/LazyBuild-floaterm/Screenshots/2020-12-30_19-49.png)
 
 
 
