@@ -63,6 +63,7 @@ javascript
 perl
 python
 qbasic
+rust
 sql
 v
 zsh

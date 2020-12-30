@@ -96,6 +96,10 @@ if interpreted_language and run == 1:
         from langs.javascript_run import javascript_run
         javascript_run(program_name)
 
+    if program_extension == "rb":
+        from langs.ruby_run import ruby_run
+        ruby_run(program_name)
+
     if program_extension == "sql":
          db_conf_file = str(Path.home())+"/.my.cnf"
          if Path(db_conf_file).is_file():
@@ -114,6 +118,9 @@ if compiled_language:
         from langs.c_family_run import c_family_run
         c_family_run(program_name_safe, [build, run, build_run], output_location)
 
+    if program_extension == "rs":
+        from langs.rust_run import rust_run
+        rust_run(program_name_safe, [build, run, build_run], output_location)
 
     if program_extension == "v":
         from langs.v_run import v_run
