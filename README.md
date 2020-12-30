@@ -27,56 +27,64 @@ optional arguments:
 you can use lazy-build with vim by mapping as shown in below example:
 ```
 " Run program file when leader+r is pressed
-<Leader>r :w <bar> :10split <bar> :set nonumber norelativenumber laststatus=0 <bar> :terminal
-    \ python /home/user/folder/lazy-builder/build.py -o /home/user/.cache/build_files/ -r 1 % <CR><CR> : <esc> G
+nnoremap <Leader>r :w <CR><bar> :FloatermNew
+    \ python /home/user/folder/lazy-builder/build.py -o /home/user/.cache/build_files/ -r 1 % <CR><CR>
 
 " build the program file when leader+b is pressed
-<Leader>b :w <bar> :10split <bar> :set nonumber norelativenumber laststatus=0 <bar> :terminal
+nnoremap <Leader>b :w <CR><bar> :FloatermNew
     \ time
-    \ python /home/user/folder/lazy-builder/build.py -o /home/user/.cache/build_files/ -b 1 % <CR><CR> : <esc> G
-
+    \ python /home/user/folder/lazy-builder/build.py -o /home/user/.cache/build_files/ -b 1 % <CR><CR>
+    
 " build and then run the program when leader+o is pressed
-<Leader>o :w <bar> :10split <bar> :set nonumber norelativenumber laststatus=0 <bar> :terminal
+nnoremap <Leader>o :w <CR><bar> :FloatermNew
     \ time
-    \ python /home/user/folder/lazy-builder/build.py -o /home/user/.cache/build_files/ -br 1 % <CR><CR> : <esc> G
+    \ python /home/user/folder/lazy-builder/build.py -o /home/user/.cache/build_files/ -br 1 % <CR><CR>
 ```
-replace the following location to your location where you downloaded/cloned lazy-builder repositories
+replace the following location to the location where you downloaded/cloned lazy-builder repositories
 ```
 /home/user/folder/lazy-builder/build.py
 ```
-replace this location to your desired location where you want to put the output/build/compiled file. 
+replace this location to your desired location where you want to put the output/build/compiled files. 
 ```
 /home/user/.cache/build_files/
 ```
 or if you want the compiled file to stay in it's parent directory(from where it's compiled) then remove "-o /home/user/.cache/build_files/" from binding
 
-change number ```10split``` to increase/decrease the terminal size
 
 ## Screenshots
-### running python file
-![running python file using lazy-builder script](https://i.imgur.com/gMNmBDQ.png)
+### running python program
+![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/v2.0/Screenshots/2020-12-30_19-46.png)
 
-### compiling c file
-![running python file using lazy-builder script](https://i.imgur.com/JpzOiQi.png)
+### compiling c++ program
+![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/v2.0/Screenshots/2020-12-30_19-46_1.png)
 
-### running c file
-![running python file using lazy-builder script](https://i.imgur.com/0ro8hxE.png)
+### running c++ program
+![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/v2.0/Screenshots/2020-12-30_19-47.png)
 
-### compiling and then running c file
-![running python file using lazy-builder script](https://i.imgur.com/YLyRfcM.png)
+### compiling and then running c++ program
+![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/v2.0/Screenshots/2020-12-30_19-47_1.png)
+
+### running bash program
+![running python file using lazy-builder script](https://github.com/shaeinst/lazy-builder/blob/v2.0/Screenshots/2020-12-30_19-49.png)
+
+
 
 
 
 # currently supported languages
 ```
-python
-c/c++
-perl
-go
-v
 bash
+c/c++
+go
+javascript
+perl
+python
+qbasic
+sql
+v
 zsh
+
 [ more comming soon...]
 ```
 # to-do
-add more supporting language
+add more language support
