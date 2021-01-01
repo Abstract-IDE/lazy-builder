@@ -100,6 +100,10 @@ if interpreted_language and run == 1:
         from langs.ruby_run import ruby_run
         ruby_run(program_name)
 
+    if program_extension == "jl":
+        from langs.julia_run import julia_run
+        julia_run(program_name)
+
     if program_extension == "sql":
          db_conf_file = str(Path.home())+"/.my.cnf"
          if Path(db_conf_file).is_file():

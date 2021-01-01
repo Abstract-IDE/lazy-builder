@@ -69,6 +69,7 @@ v
 [ Interpreted Languages ]
 bash
 javascript
+julia
 perl
 python
 sql
