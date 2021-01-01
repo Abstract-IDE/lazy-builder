@@ -72,6 +72,7 @@ javascript
 julia
 perl
 python
+R
 sql
 zsh
 
