@@ -80,7 +80,7 @@ if interpreted_language and run == 1:
         from langs.python_run import python_run
         python_run(program_name)
 
-    if program_extension == "bash":
+    if program_extension in ["bash", "sh"]:
         from langs.bash_run import bash_run
         bash_run(program_name)
 
