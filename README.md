@@ -61,10 +61,11 @@ or if you want the compiled file to stay in it's parent directory(from where it'
 ```
 [ Compiled Languages ]
 c/c++
+D
 go
 qbasic
 rust
-v
+V
 
 [ Interpreted Languages ]
 bash

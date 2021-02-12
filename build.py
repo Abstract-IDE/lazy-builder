@@ -126,6 +126,10 @@ if compiled_language:
         from langs.c_family_run import c_family_run
         c_family_run(program_name_safe, [build, run, build_run], output_location)
 
+    if program_extension == "d":
+        from langs.d_run import d_run
+        d_run(program_name_safe, [build, run, build_run], output_location)
+
     if program_extension == "rs":
         from langs.rust_run import rust_run
         rust_run(program_name_safe, [build, run, build_run], output_location)
