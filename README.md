@@ -4,7 +4,7 @@ Lazy-Builder is a python script for buinding or running any programming language
 
 ### logic
 logic of lazy-build is simple. it just analyse the extension of file which you want to build/run.If programming language is Interpreted, it ran the file as interpreted language OR if programming language is Compiled, it ran the/build file as compliled language
- 
+
 ## Uses
 
 
@@ -29,7 +29,7 @@ you can use lazy-build with vim by mapping as shown in below example:
 [ NOTE: first install  [vim-floaterm](https://github.com/voldikss/vim-floaterm) plugin
                     OR
 if you don't want to install vim-floaterm plugin, go with [this](https://github.com/shaeinst/lazy-builder/tree/main) branch and follow [this](https://github.com/shaeinst/lazy-builder/tree/main#using-with-vimneo-vim) example of mapping (which use builtin split option)
-] 
+]
 ```
 " Run program file when leader+r is pressed
 nnoremap <Leader>r :w <CR><bar> :FloatermNew
@@ -39,7 +39,7 @@ nnoremap <Leader>r :w <CR><bar> :FloatermNew
 nnoremap <Leader>b :w <CR><bar> :FloatermNew
     \ time
     \ python /home/user/folder/lazy-builder/build.py -o /home/user/.cache/build_files/ -b 1 % <CR><CR>
-    
+
 " build and then run the program when leader+o is pressed
 nnoremap <Leader>o :w <CR><bar> :FloatermNew
     \ time
@@ -49,7 +49,7 @@ replace the following location to the location where you downloaded/cloned lazy-
 ```
 /home/user/folder/lazy-builder/build.py
 ```
-replace this location to your desired location where you want to put the output/build/compiled files. 
+replace this location to your desired location where you want to put the output/build/compiled files.
 ```
 /home/user/.cache/build_files/
 ```
@@ -71,6 +71,7 @@ V
 bash
 javascript
 julia
+lua
 perl
 python
 R
