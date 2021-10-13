@@ -1,5 +1,14 @@
 import subprocess
 
+from shutil import get_terminal_size
+
+def print_run(string, symbol="-", color_code="[37m"):
+    xx = get_terminal_size((80, 20))
+    column_len = int([str(xx).split("=")[1]][0].split(',')[0])
+
+    print(f"\033{color_code}{string.center(column_len, symbol)}\033[0m")
+
+
 
 def go_exec():
     cmd = f"{file_name_no_extc_with_loc}"
@@ -8,7 +17,8 @@ def go_exec():
     cmd = "".join(cmd).split()
 
     try:
-        print("████████████████ RUNNING PROGRAM ████████████████")
+        print_run("RUNNING PROGRAM", " ")
+        print_run("-", "-")
         subprocess.run(cmd)
         print("\n\n")
     except FileNotFoundError:
@@ -23,13 +33,13 @@ def go_build():
     status = subprocess.run(cmd)
 
     if  status.returncode == 0:
-        print("__________________________________________")
-        print("✔\tCompilation Successful")
-        print("__________________________________________")
+        print_run("-", "-")
+        print_run("✔ Compilation Successful", " ", "[32m")
+        print_run("-", "-")
     if status.returncode != 0:
-        print("__________________________________________")
-        print("❌\tCompilation Failed")
-        print("__________________________________________")
+        print_run("-", "-")
+        print_run("X Compilation Failed", " ", "[31m")
+        print_run("-", "-")
         exit(1)
 
 
