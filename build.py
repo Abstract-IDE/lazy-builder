@@ -1,5 +1,8 @@
 #! /usr/bin/python3
 
+compiled_l      = [ "c", "C", "cpp", "c++", "cxx", "v", "go", "bas", "rs", "d" ]
+interpreted_l   = [ "bash","jl","js","lua","pl","py","r","rb","sh","sql","zsh","lua","dart" ]
+
 # ----------------------------------------------------------------------------
 # import important module
 import argparse
@@ -75,12 +78,10 @@ program_extension = analyse_program_extension(program_name)
 # ----------------------------------------------------------------------------
 interpreted_language = 0
 compiled_language = 0
-with open(f"{parent_dir}/lists/compiled_language") as File:
-    if str(program_extension) in File.read().split():
-        compiled_language = 1
-with open(f"{parent_dir}/lists/interpreted_language") as File:
-    if str(program_extension) in File.read().split():
-        interpreted_language = 1
+if str(program_extension) in compiled_l:
+    compiled_language = 1
+if str(program_extension) in interpreted_l:
+    interpreted_language = 1
 # ----------------------------------------------------------------------------
 
 # ----------------------------------------------------------------------------
