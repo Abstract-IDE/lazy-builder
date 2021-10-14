@@ -69,12 +69,14 @@ V
 
 [ Interpreted Languages ]
 bash
+dart
 javascript
 julia
 lua
 perl
 python
 R
+ruby
 sql
 zsh
 
