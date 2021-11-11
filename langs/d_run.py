@@ -1,12 +1,4 @@
 import subprocess
-from shutil import get_terminal_size
-
-def print_run(string, symbol="-", color_code="[37m"):
-    xx = get_terminal_size((80, 20))
-    column_len = int([str(xx).split("=")[1]][0].split(',')[0])
-
-    print(f"\033{color_code}{string.center(column_len, symbol)}\033[0m")
-
 
 
 def d_exec():
@@ -16,8 +8,8 @@ def d_exec():
     cmd = "".join(cmd).split()
 
     try:
-        print_run("RUNNING PROGRAM", " ")
-        print_run("-", "-")
+
+        print("████████████████ RUNNING PROGRAM ████████████████")
         subprocess.run(cmd)
         print("\n\n")
     except FileNotFoundError:
@@ -33,13 +25,13 @@ def d_build():
     status = subprocess.run(cmd)
 
     if  status.returncode == 0:
-        print_run("-", "-")
-        print_run("✔ Compilation Successful", " ", "[32m")
-        print_run("-", "-")
+        print("__________________________________________")
+        print("✔\tCompilation Successful")
+        print("__________________________________________")
     if status.returncode != 0:
-        print_run("-", "-")
-        print_run("X Compilation Failed", " ", "[31m")
-        print_run("-", "-")
+        print("__________________________________________")
+        print("❌\tCompilation Failed")
+        print("__________________________________________")
         exit(1)
 
 
