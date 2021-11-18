@@ -1,3 +1,4 @@
+import display
 ## NOT worked
 # import subprocess
 
@@ -8,7 +9,8 @@
 
 import os
 
+
 def sql_run(file_name):
     cmd = f"mysql < {file_name} --table "
+    display.print_run()
     os.system(cmd)
-

@@ -55,17 +55,17 @@ def analyse_program_extension(file_name):
     return file_extension[-1]
 program_extension = analyse_program_extension(program_name)
 # ----------------------------------------------------------------------------
-
+compiled_langs = ["c", "C", "cpp", "c++", "cxx", "v", "go", "bas", "rs", "d"]
+interpreted_langs = ["bash", "jl", "js", "lua", "pl", "py", "r", "rb", "sh", "sql", "zsh", "dart"]
 
 # ----------------------------------------------------------------------------
 interpreted_language = 0
 compiled_language = 0
-with open(f"{parent_dir}/lists/compiled_language") as File:
-    if str(program_extension) in File.read().split():
-        compiled_language = 1
-with open(f"{parent_dir}/lists/interpreted_language") as File:
-    if str(program_extension) in File.read().split():
-        interpreted_language = 1
+
+if str(program_extension) in compiled_langs:
+    compiled_language = 1
+if str(program_extension) in interpreted_langs:
+    interpreted_language = 1
 # ----------------------------------------------------------------------------
 
 

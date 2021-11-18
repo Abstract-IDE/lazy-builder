@@ -1,4 +1,5 @@
 import subprocess
+import display
 
 
 def rust_exec():
@@ -8,8 +9,7 @@ def rust_exec():
     cmd = "".join(cmd).split()
 
     try:
-
-        print("████████████████ RUNNING PROGRAM ████████████████")
+        display.print_run()
         subprocess.run(cmd)
         print("\n\n")
     except FileNotFoundError:
@@ -25,13 +25,9 @@ def rust_build():
     status = subprocess.run(cmd)
 
     if  status.returncode == 0:
-        print("__________________________________________")
-        print("✔\tCompilation Successful")
-        print("__________________________________________")
+        display.sucess_msg()
     if status.returncode != 0:
-        print("__________________________________________")
-        print("❌\tCompilation Failed")
-        print("__________________________________________")
+        display.failed_msg()
         exit(1)
 
 
