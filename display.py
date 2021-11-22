@@ -1,13 +1,18 @@
 import os
-from colorama import Fore as colors
 
+
+# colors
+RESET = "\033[0m"
+BLACK = "\033[0;30;0m"
+GREEN = "\033[0;32m"
+RED = "\033[0;31;47m"
 
 cols, rows = os.get_terminal_size()
 
 
 def print_das():
     for _ in range(cols):
-        print(colors.BLACK+"─"+colors.RESET, end="")
+        print(f"{BLACK}─{RESET}", end='')
     print("")
 
 
@@ -19,7 +24,7 @@ def print_run():
 
 
 def sucess_msg():
-    xx = "Compilation " + colors.GREEN + "Successful ✔" + colors.RESET
+    xx = f"Compilation {GREEN}Successful ✔{RESET}"
     xx = xx.center(int(cols))
     print_das()
     print(xx)
@@ -27,7 +32,7 @@ def sucess_msg():
 
 
 def failed_msg():
-    xx = "Compilation " + colors.RED + "Failed ❌" + colors.RESET
+    xx = f"Compilation {RED}Failed ❌{RESET}"
     xx = xx.center(int(cols))
     print_das()
     print(xx)
