@@ -24,7 +24,7 @@ def print_run():
 
 
 def sucess_msg():
-    xx = f"Compilation {GREEN}Successful ✔{RESET}"
+    xx = f"        Compilation {GREEN}Successful ✔{RESET}"
     xx = xx.center(int(cols))
     print_das()
     print(xx)
@@ -32,7 +32,7 @@ def sucess_msg():
 
 
 def failed_msg():
-    xx = f"Compilation {RED}Failed ❌{RESET}"
+    xx = f"        Compilation {RED}Failed ❌{RESET}"
     xx = xx.center(int(cols))
     print_das()
     print(xx)
